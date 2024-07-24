@@ -1,4 +1,6 @@
+/* eslint-disable no-unused-vars */
 import Logo from "../../assets/website/Logo.png";
+import DarkMode from "./DarkMode";
 
 const MenuLinks = [
   { id: 1, name: "Home", link: "/" },
@@ -13,7 +15,7 @@ const MenuLinks = [
 const Navbar = () => {
   return (
     <>
-      <nav>
+      <nav className="bg-letter dark:bg-secondary dark:text-letter duration-300 ">
         <div className="container py-4 md:py-3">
           <div className="flex justify-between items-center">
             {/* logo */}
@@ -44,10 +46,13 @@ const Navbar = () => {
                     </li>
                   );
                 })}
-                              <button className="btn-primary text-letter">Get in touch</button>
-                              <DarkMode/>
+                <button className="btn-primary text-letter">
+                  Get in touch
+                </button>
+                <DarkMode />
               </ul>
-            </div>
+                      </div>
+                      {/* Mobile Navlinks */}
           </div>
         </div>
       </nav>
