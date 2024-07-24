@@ -1,8 +1,12 @@
 /* eslint-disable no-unused-vars */
+import { useState } from "react";
 import Logo from "../../assets/website/Logo.png";
 import DarkMode from "./DarkMode";
+import { TbMenuDeep } from "react-icons/tb";
+import { TfiClose } from "react-icons/tfi";
+import ResponsiveMenu from "./ResponsiveMenu";
 
-const MenuLinks = [
+ export const MenuLinks = [
   { id: 1, name: "Home", link: "/" },
   { id: 2, name: "About", link: "/#about" },
   { id: 3, name: "Services", link: "/#services" },
@@ -13,6 +17,12 @@ const MenuLinks = [
 ];
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <>
       <nav className="bg-letter dark:bg-secondary dark:text-letter duration-300 ">
@@ -51,10 +61,27 @@ const Navbar = () => {
                 </button>
                 <DarkMode />
               </ul>
-                      </div>
-                      {/* Mobile Navlinks */}
+            </div>
+            {/* Mobile Navlinks */}
+            <div className="flex items-center gap-4 md:hidden">
+              <DarkMode />
+              {!showMenu ? (
+                <TbMenuDeep
+                  onClick={toggleMenu}
+                  className="cursor-pointer text-2xl"
+                />
+              ) : (
+                <TfiClose
+                  onClick={toggleMenu}
+                  className="cursor-pointer text-2xl"
+                />
+              )}
+            </div>
           </div>
         </div>
+
+        {/* Mobile Menu section */}
+        <ResponsiveMenu showMenu={showMenu} />
       </nav>
     </>
   );

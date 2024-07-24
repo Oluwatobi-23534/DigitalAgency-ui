@@ -9,7 +9,10 @@ export default {
     colors: {
       primary: "#663399",
       letter: "#FFFFFF",
-      secondary: "#212121"
+      secondary: "#212121",
+      tertiary: "#7A288A",
+      complex: '#222222',
+      slate: "#718096",
     },
     container: {
       center: true,
