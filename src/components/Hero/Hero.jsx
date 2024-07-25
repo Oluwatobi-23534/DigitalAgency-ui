@@ -9,7 +9,7 @@ const Hero = () => {
             {/* image section */}
             <div className="order-1 sm:order-2 relative">
               <img src={HeroImg} alt="" />
-              <div className="absolute bg-letter dark:bg-tertiary px-4 py-2 rounded-xl shadow-md -bottom-5 -right-8">
+              <div className="absolute bg-letter dark:bg-tertiary px-4 py-2 rounded-xl shadow-md -bottom-5 -right-8 lg:mr-0 mr-8">
                 <p>💎 Projects</p>
                 <h1 className="font-bold">
                   600+ <span className="font-normal">Done</span>
