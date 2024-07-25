@@ -8,10 +8,13 @@ export default {
     },
     colors: {
       primary: "#663399",
+      light: "#F1F5F9",
+      service: "#455A64",
+      brand: "#213737",
       letter: "#FFFFFF",
-      secondary: "#212121",
+      secondary: "#050808",
       tertiary: "#7A288A",
-      complex: '#222222',
+      complex: '#0e1818',
       slate: "#718096",
     },
     container: {
