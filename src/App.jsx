@@ -1,3 +1,4 @@
+import BlogsComp from "./components/Blogs/BlogsComp"
 import BrandLogo from "./components/BrandLogo/BrandLogo"
 import Hero from "./components/Hero/Hero"
 import Navbar from "./components/Navbar/Navbar"
@@ -14,7 +15,8 @@ const App = () => {
       <Hero />
       <BrandLogo />
       <Services />
-      <Testimonials/>
+      <Testimonials />
+      <BlogsComp/>
     </div>
   )
 }
