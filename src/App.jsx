@@ -1,5 +1,6 @@
 import BlogsComp from "./components/Blogs/BlogsComp"
 import BrandLogo from "./components/BrandLogo/BrandLogo"
+import Footer from "./components/Footer/Footer"
 import Hero from "./components/Hero/Hero"
 import Navbar from "./components/Navbar/Navbar"
 import Services from "./components/Services/Services"
@@ -16,7 +17,8 @@ const App = () => {
       <BrandLogo />
       <Services />
       <Testimonials />
-      <BlogsComp/>
+      <BlogsComp />
+      <Footer/>
     </div>
   )
 }
